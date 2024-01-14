@@ -21,7 +21,7 @@
         <div class="navbar navbar-inverse navbar-fixed-top ExampleFont">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" runat="server" href="~/">
+                    <a class="navbar-brand" runat="server" href="~/Landing.aspx">
                         <img src="https://mayani.ph/wp-content/uploads/2023/07/Logo.png" height="50px"/>
                     </a>
                 </div>
