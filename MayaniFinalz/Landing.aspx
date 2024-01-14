@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row" style="display:block;">
             <div class="col-md-6" style="display:inline-block;">
-                insert div content here
+                insert div content here wala na akong baon bukas
             </div>
             <div class="col-md-6" style="display:inline-block;">
                 insert div content here
