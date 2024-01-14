@@ -15,6 +15,15 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="Content/shabu.css" />
 </head>
+    <style>
+.vl {
+  border-left: 1px solid green;
+  height: 30px;
+  left: 50%;
+  margin-left: -85px;
+  margin-top: 10px;
+}
+</style>
     <script> 
 $(document).ready(function(){
   $("#flip").click(function(){
@@ -44,9 +53,10 @@ $(document).ready(function(){
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="#">GET STARTED</a></li>
-                                <li><a runat="server" href="#">ABOUT</a></li>
+                            <ul class="nav navbar-nav navbar-right" style="display:block;">
+                                <li style="display: inline-block;"><a runat="server" href="#">GET STARTED</a></li>
+                                <div class="vl" style="display: inline-block;"></div>
+                                <li style="display: inline-block;"><a runat="server" href="#">ABOUT</a></li>
                             </ul>
                         </AnonymousTemplate>
                     </asp:LoginView>
