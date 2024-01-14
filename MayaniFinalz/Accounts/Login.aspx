@@ -14,20 +14,16 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-md-6 mx-auto">
-                           <h3>Login</h3>
+                     <div class="col-8-md-8 mx-auto">
+                           <h3>Login</h3> 
                      </div>
+                  </div>
                   </div>
                   <div class="row">
                      <div class="col">
-                        <hr>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col">
-                        <label>Member ID</label>
+                        <label>Email</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Member ID"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Email"></asp:TextBox>
                         </div>
                         <label>Password</label>
                         <div class="form-group">
