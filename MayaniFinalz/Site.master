@@ -53,9 +53,13 @@ $(document).ready(function(){
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right" style="display:block;">
-                                <li style="display: inline-block;"><a runat="server" href="#">GET STARTED</a></li>
+                                <li style="display: inline-block;">
+                                    <button></button>
+                                </li>
                                 <div class="vl" style="display: inline-block;"></div>
-                                <li style="display: inline-block;"><a runat="server" href="#">ABOUT</a></li>
+                                <li style="display: inline-block;">
+                                    <button></button>
+                                </li>
                             </ul>
                         </AnonymousTemplate>
                     </asp:LoginView>
