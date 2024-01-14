@@ -40,7 +40,6 @@ $(document).ready(function(){
 </script>
 <body>
     <form runat="server">
-
         <div class="navbar navbar-inverse navbar-fixed-top ExampleFont">
             <div class="container">
                 <div class="navbar-header">
