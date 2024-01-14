@@ -1,0 +1,7 @@
+﻿        @font-face {
+            font-family: "The Example Font";
+            src: url(https://fonts.google.com/specimen/Raleway) format("truetype");
+        }
+        .ExampleFont { 
+            font-family: "The Example Font", Verdana;
+        }
