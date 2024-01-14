@@ -45,12 +45,8 @@ $(document).ready(function(){
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    Added things na
-                                </li>
-                                <li>
-                                    another added things example
-                                </li>
+                                <li><a runat="server" href="#">GET STARTED</a></li>
+                                <li><a runat="server" href="#">ABOUT</a></li>
                             </ul>
                         </AnonymousTemplate>
                     </asp:LoginView>
