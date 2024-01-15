@@ -13,27 +13,37 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="Content/shabu.css" />
 </head>
     <style>
                 .vl {
-              border-left: 1px solid green;
+              border-left: 2px solid green;
               height: 30px;
               left: 50%;
+              margin-top: 26px;
             }
     </style>
     <script> 
 $(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
+  $("#flip").hover(function(){
+    $("#panel").slideToggle("fast");
   });
+});
+$(document).ready(function () {
+    $("#flip").click(function () {
+        $("#panel").slideToggle("fast");
+    });
 });
 </script>
 <script> 
 $(document).ready(function(){
-  $("#flip2").click(function(){
-    $("#panel2").slideToggle("slow");
+  $("#flip2").hover(function(){
+    $("#panel2").slideToggle("fast");
   });
+});
+$(document).ready(function () {
+    $("#flip").click(function () {
+        $("#panel").slideToggle("fast");
+    });
 });
 </script>
 <body>
@@ -50,18 +60,20 @@ $(document).ready(function(){
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right" style="display:block;">
-                                <li style="display: inline-block;">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li style="display:inline-block">
                                     <a>
-                                    <button style="border: transparent !important; background: transparent !important;">
+                                    <button id="flip" style="border: transparent !important; background: transparent !important;">
                                         <img src="assets/gs button.png" width="200px" />
                                     </button>
                                     </a>
                                 </li>
-                                <a class="vl" style="display: inline-block;"></a>
-                                <li style="display: inline-block;">
+                                <li style="display:inline-block">
+                                    <div class="vl"></div>
+                                </li>
+                                <li style="display:inline-block">
                                     <a>
-                                    <button style="border: transparent !important; background: transparent !important;">
+                                    <button id="flip2" style="border: transparent !important; background: transparent !important;">
                                         <img src="assets/about.png" width="110px" />
                                     </button>
                                     </a>
@@ -77,6 +89,7 @@ $(document).ready(function(){
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
+                <p>&copy; MAYANI&trade; INC. All rights reserved. </p>
             </footer>
         </div>
     </form>

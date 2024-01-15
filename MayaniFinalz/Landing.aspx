@@ -2,6 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 <link rel="stylesheet" href="Content/css/login.css" />
+    <br />
     <div class="container">
         <div class="row" style="display:block;">
             <div class="col-md-6" style="display:inline-block;">

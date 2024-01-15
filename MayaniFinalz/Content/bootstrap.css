@@ -52,7 +52,6 @@ audio:not([controls]) {
 }
 
 html {
-  font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -310,14 +309,8 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-@font-face {
-    font-family: "Raleway";
-    src: url(https://fonts.google.com/specimen/Raleway) format("truetype");
-        
-}
-
 body {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
