@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+﻿wa<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -54,11 +54,19 @@ $(document).ready(function(){
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right" style="display:block;">
                                 <li style="display: inline-block;">
-                                    <button></button>
+                                    <a>
+                                    <button>
+                                        <img src="assets/gs button.png" width="200px" />
+                                    </button>
+                                    </a>
                                 </li>
                                 <div class="vl" style="display: inline-block;"></div>
                                 <li style="display: inline-block;">
-                                    <button></button>
+                                    <a>
+                                    <button>
+                                        <img src="assets/about.png" width="110px" />
+                                    </button>
+                                    </a>
                                 </li>
                             </ul>
                         </AnonymousTemplate>
