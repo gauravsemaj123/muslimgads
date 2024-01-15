@@ -16,14 +16,12 @@
     <link rel="stylesheet" href="Content/shabu.css" />
 </head>
     <style>
-.vl {
-  border-left: 1px solid green;
-  height: 30px;
-  left: 50%;
-  margin-left: -85px;
-  margin-top: 10px;
-}
-</style>
+                .vl {
+              border-left: 1px solid green;
+              height: 30px;
+              left: 50%;
+            }
+    </style>
     <script> 
 $(document).ready(function(){
   $("#flip").click(function(){
@@ -55,15 +53,15 @@ $(document).ready(function(){
                             <ul class="nav navbar-nav navbar-right" style="display:block;">
                                 <li style="display: inline-block;">
                                     <a>
-                                    <button>
+                                    <button style="border: transparent !important; background: transparent !important;">
                                         <img src="assets/gs button.png" width="200px" />
                                     </button>
                                     </a>
                                 </li>
-                                <div class="vl" style="display: inline-block;"></div>
+                                <a class="vl" style="display: inline-block;"></a>
                                 <li style="display: inline-block;">
                                     <a>
-                                    <button>
+                                    <button style="border: transparent !important; background: transparent !important;">
                                         <img src="assets/about.png" width="110px" />
                                     </button>
                                     </a>

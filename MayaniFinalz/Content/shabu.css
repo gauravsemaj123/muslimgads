@@ -5,3 +5,8 @@
         .ExampleFont { 
             font-family: "The Example Font", Verdana;
         }
+        .vl {
+              border-left: 1px solid green;
+              height: 30px;
+              left: 50%;
+            }
