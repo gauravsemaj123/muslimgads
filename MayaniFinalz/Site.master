@@ -89,7 +89,7 @@ $(document).ready(function () {
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; MAYANI&trade; INC. All rights reserved. </p>
+                <p style="color:white;">&copy; MAYANI&trade; INC. All rights reserved. </p>
             </footer>
         </div>
     </form>

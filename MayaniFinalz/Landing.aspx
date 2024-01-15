@@ -6,10 +6,10 @@
     <div class="container">
         <div class="row" style="display:block;">
             <div class="col-md-6" style="display:inline-block;">
-                insert div content here wala na akong baon bukas
+                <p style="color:white;">insert div content here wala na akong baon bukas</p>
             </div>
             <div class="col-md-6" style="display:inline-block;">
-                insert div content here
+                <p style="color:white;">insert div content here</p>
             </div>
         </div>
     </div>
