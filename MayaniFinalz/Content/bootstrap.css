@@ -782,7 +782,21 @@ pre code {
   clear: both;
 }
 
+.row1{
+    margin-left: 20px;
+    background-color: #355E3B;
+    border-style: outset;
+    border-radius: 20px;
+}
+
+.row2{
+    background-color: white;
+    border-style: outset;
+    border-color: black;
+}
+
 .row {
+  margin-top: 70px;
   margin-right: -15px;
   margin-left: -15px;
 }
