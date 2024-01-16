@@ -1,0 +1,241 @@
+﻿wa<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - MAYANI   </title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.css" rel="stylesheet">
+</head>
+    <style>
+                .vl {
+              border-left: 2px solid green;
+              height: 30px;
+              left: 50%;
+              margin-top: 26px;
+            }
+                img:hover{
+                    cursor:pointer;
+                }
+            .rowright{
+                right: 75px;
+                position: absolute;
+                z-index:2312;
+                margin-top: 68px;
+                margin-right:127px;
+                display: block !important;
+            }
+            #panel, #flip {
+                z-index: 2;
+            }
+
+            #panel {
+              display: none;
+            }
+
+            #panel2, #flip2 {
+                z-index: 2;
+            }
+
+            #panel2 {
+              display: none;
+            }
+            #panel3, #flip3 {
+                z-index: 2;
+            }
+
+            #panel3 {
+              display: none;
+            }
+            .getstarted{
+                padding:15px;
+                background: #00594c;
+                width:auto;
+                height:auto;
+                border-radius:10px;
+            }
+            .about{
+                padding:15px;
+                background: #00594c;
+                width:auto;
+                height:auto;
+                border-radius:10px;
+            }
+            .font-gilroy {
+                font-family: 'Gilroy', sans-serif !important;
+            }
+            .hr{
+                border: 1px solid #fefefe;
+                width:200px;
+                margin: 5px;
+            }
+            .searchbar{
+                margin-top:30px;
+                border-radius:10px 15px 15px 10px;
+                border: 1px solid black;
+                display: inline-block;
+                margin-left:115px;
+            }
+            .searchbar > input{
+                border: transparent !important;
+                font-style:italic;
+                height:20px;
+                border-radius:10px 10px 10px 10px;
+            }
+            .searchbar > input:focus{
+               outline: none;
+            }
+            .circlebutton{
+                padding-left:4px;
+                padding-bottom: 5px;
+                width:25px;
+                height:25px;
+                border-radius:100%;
+            }
+    </style>
+    <script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("fast");
+  });
+});
+</script>
+<script> 
+$(document).ready(function(){
+  $("#flip2").click(function(){
+    $("#panel2").slideToggle("fast");
+  });
+});
+</script>
+<script> 
+$(document).ready(function(){
+  $("#flip3").click(function(){
+    $("#panel3").slideToggle("fast");
+  });
+});
+</script>
+<body>
+    <form runat="server">
+        <div class="navbar navbar-inverse navbar-fixed-top ExampleFont">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" runat="server" href="~/Landing.aspx">
+                        <img src="https://mayani.ph/wp-content/uploads/2023/07/Logo.png" height="50px"/>
+                    </a>
+                    <div class="searchbar">
+                        <input id="searchquery" value="" placeholder="Search"/>
+                        <button type="button" class="circlebutton">
+                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right" style="width:550px;">
+                                <li style="display:inline-block">
+                                    <a>
+                                        <strong style="font-size: 25px; color: #00594c; cursor:pointer;" class="font-gilroy" id="flip">PRODUCTS</strong>
+                                    </a>
+                                </li>
+                                <li style="display:inline-block">
+                                    <div class="vl"></div>
+                                </li>
+                                <li style="display:inline-block">
+                                    <a>
+                                        <strong style="font-size: 25px; color: #00594c; cursor:pointer;" class="font-gilroy" id="flip2">TRANSACTIONS</strong>
+                                    </a>
+                                </li>
+                                <li style="display:inline-block">
+                                    <div class="vl"></div>
+                                </li>
+                                </li>
+                                <li style="display:inline-block">
+                                    <a>
+                                        <strong style="font-size: 25px; color: #00594c; cursor:pointer;" class="font-gilroy" id="flip3">EMPLOYEES</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </AnonymousTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </div>
+                <div class="rowright">
+            <div id="panel"> 
+                <div class="getstarted font-gilroy" style="display: grid; text-align:center">
+                    <a style="color:#fefefe" href="Accounts/Login.aspx">
+                        <strong style="font-size: 25px">FRUITS</strong>
+                    </a>
+                    <hr class="hr" />
+                    <a style="color:#fefefe" href="Accounts/Register.aspx">
+                        <strong style="font-size: 25px">VEGETABLES</strong>
+                    </a>
+                    <hr class="hr" />
+                    <a style="color:#fefefe" href="Accounts/Register.aspx">
+                        <strong style="font-size: 25px">SEAFOOD</strong>
+                    </a>
+                    <hr class="hr" />
+                    <a style="color:#fefefe" href="Accounts/Register.aspx">
+                        <strong style="font-size: 25px">MEAT</strong>
+                    </a>
+                    <hr class="hr" />
+                    <a style="color:#fefefe" href="Accounts/Register.aspx">
+                        <strong style="font-size: 25px">POULTRY</strong>
+                    </a>
+                </div>
+            </div>
+            <div id="panel2">
+                <div class="about font-gilroy" style="display: grid; text-align:center">
+                    <a style="color:#fefefe" href="Accounts/Login.aspx">
+                        <strong style="font-size: 25px">PULL-OUTS</strong>
+                    </a>
+                    <hr class="hr" />
+                    <a style="color:#fefefe" href="Accounts/Register.aspx">
+                        <strong style="font-size: 25px">DELIVERIES</strong>
+                    </a>
+                    <hr class="hr" />
+                    <a style="color:#fefefe" href="Accounts/Register.aspx">
+                        <strong style="font-size: 25px">SALES</strong>
+                    </a>
+                    <hr class="hr" />
+                    <a style="color:#fefefe" href="Accounts/Register.aspx">
+                        <strong style="font-size: 25px">ORDERS</strong>
+                    </a>
+                </div>
+            </div>
+            <div id="panel3">
+                <div class="about font-gilroy" style="display: grid; text-align:center">
+                    <a style="color:#fefefe" href="Accounts/Login.aspx">
+                        <strong style="font-size: 20px">OPERATIONS SECTION</strong>
+                    </a>
+                    <hr class="hr" />
+                    <a style="color:#fefefe" href="Accounts/Register.aspx">
+                        <strong style="font-size: 20px">SALES SECTION</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p style="color:white;">&copy; MAYANI&trade; INC. All rights reserved. </p>
+            </footer>
+        </div>
+    </form>
+</body>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+</html>

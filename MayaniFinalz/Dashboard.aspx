@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Dashboard.aspx.cs" Inherits="Dashboard" %>
+﻿<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/dashboard.master" AutoEventWireup="true" CodeFile="Dashboard.aspx.cs" Inherits="Dashboard" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 <div class="container">
@@ -8,7 +8,14 @@
 
     <div class="col-lg-3 col-lg-offset-2 gauche, row1" style="left: -243px; top: -24px; height: 505px; width: 321px; color: #FFFFFF; margin-right: 82px; margin-bottom: 39px; font-size: medium; margin-top: 48px;">
         <br />
-    <img alt="" src="profile.png" style="width: 104px; height: 106px" />&nbsp; David Cruz<br/>USER
+        <div>
+            <img alt="" src="profile.png" style="width: 104px; height: 106px; margin-top:-30px" />
+            <div style="display: inline-block">
+                <h3>CRUZ, DAVID N.</h3>
+                <hr style="margin:10px 0px 10px" />
+                <h5>Deliveryman</h5>
+            </div>
+        </div>
         <br />
         <br />
         Orders Today<br />

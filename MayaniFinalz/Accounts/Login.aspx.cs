@@ -11,4 +11,9 @@ public partial class Accounts_Login : System.Web.UI.Page
     {
 
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Button1.PostBackUrl = "../Dashboard.aspx";
+    }
 }

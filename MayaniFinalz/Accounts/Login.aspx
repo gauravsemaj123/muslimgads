@@ -17,15 +17,13 @@
                         <label>Email</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Email"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="rfvTextBox1" runat="server" ErrorMessage="Required Email" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
                         </div>
                         <label>Password</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="rfvTextBox2" runat="server" ErrorMessage="Required Password" ControlToValidate="TextBox2"></asp:RequiredFieldValidator>
                         </div>
                         <div class="form-group">
-                           <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Sign in" />
+                           <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Sign in" OnClick="Button1_Click" />
                         </div>
                          <div class="create-forgot">
                              <label>Create Account</label>
