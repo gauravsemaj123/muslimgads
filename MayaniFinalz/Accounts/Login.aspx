@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Accounts_Login2" %>
+﻿<%@ Page Title="Log in | MAYANI" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Accounts_Login" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" Runat="Server">
      <div class="container">
       <div class="row">
          <div class="col-md-6 mx-auto">
@@ -42,6 +42,5 @@
             <a href="homepage.aspx"><< Back to Home</a><br><br>
          </div>
       </div>
-   </div>
 </asp:Content>
 

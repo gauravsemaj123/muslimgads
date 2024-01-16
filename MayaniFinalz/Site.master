@@ -101,7 +101,7 @@ $(document).ready(function(){
                             <ul class="nav navbar-nav navbar-right">
                                 <li style="display:inline-block">
                                     <a>
-                                        <strong style="font-size: 35px; color: #00594c;" class="font-gilroy" id="flip">GET STARTED</strong>
+                                        <strong style="font-size: 35px; color: #00594c; cursor:pointer;" class="font-gilroy" id="flip">GET STARTED</strong>
                                     </a>
                                 </li>
                                 <li style="display:inline-block">
@@ -109,7 +109,7 @@ $(document).ready(function(){
                                 </li>
                                 <li style="display:inline-block">
                                     <a>
-                                        <strong style="font-size: 35px; color: #00594c;" class="font-gilroy" id="flip2">ABOUT</strong>
+                                        <strong style="font-size: 35px; color: #00594c; cursor:pointer;" class="font-gilroy" id="flip2">ABOUT</strong>
                                     </a>
                                 </li>
                             </ul>

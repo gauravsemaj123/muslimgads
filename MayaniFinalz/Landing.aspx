@@ -4,16 +4,21 @@
     <link rel="stylesheet" href="Content/css/login.css" />
     <link rel="stylesheet" href="Content/contetns.css"/>
     
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-               <div class="box1">
-                    <img src="https://mayani.ph/wp-content/uploads/2023/07/Logo.png" height="50px"/>
-                    <p style="color:black;">Welcome to landing page, Employee. Here at Mayani, we make your life easier</p>
+    <div class="wrappercontent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                   <div class="box1">
+                        <img src="https://mayani.ph/wp-content/uploads/2023/07/Logo.png" height="50px"/>
+                        <p style="color:black;">Welcome to landing page, Employee. Here at Mayani, we make your life easier</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <p style="color:black;">kakaurat na</p>
+                <div class="col-md-6">
+                    <div class="box2">
+                        <p style="color:black;">kakaurat na</p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
