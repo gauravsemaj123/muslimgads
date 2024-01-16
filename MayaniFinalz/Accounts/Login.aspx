@@ -1,29 +1,15 @@
-<<<<<<< HEAD
-﻿<%@ Page Title="Log in | MAYANI" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Accounts_Login" %>
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" Runat="Server">
-     <div class="container">
-=======
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="Accounts_login" %>
+﻿<%@ Page Title="Log in" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Accounts_Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
 
 <<div class="container">
->>>>>>> e3bc5e29a4e236859087c520ce4d5866e1abbce2
-      <div class="row">
+      <div class="row" style="margin-top:-18px">
          <div class="col-md-6 mx-auto">
             <div class="card">
-               <div class="card-body">
+               <div class="card-body" style="margin-top: 10px">
                   <div class="row">
                      <div class="col">
-                        <center>
-                           <img width="150px" src="imgs/generaluser.png"/>
-                        </center>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col">
-                           <h2>Login</h2>
+                           <h2><%: Title%> at MAYANI</h2>
                      </div>
                   </div>
                   <div class="row">
@@ -46,10 +32,10 @@
                              <a href="#"> Forgot Password?</a>
                          </div>
                         <div class="form-group">
-                           <a href="usersignup.aspx"><input class="btn btn-info btn-block btn-lg" id="Button2" type="button" value="Sign in with linkedin" /></a>
+                           <a href=""><input class="btn btn-info btn-block btn-lg" id="Button2" type="button" value="Sign in with linkedin" /></a>
                         </div>
                           <div class="form-group">
-                           <a href="usersignup.aspx"><input class="btn btn-info btn-block btn-lg" id="Button3" type="button" value="Sign in with google" /></a>
+                           <a href="#"><input class="btn btn-info btn-block btn-lg" id="Button3" type="button" value="Sign in with google" /></a>
                         </div>
                      </div>
                   </div>
@@ -58,4 +44,5 @@
             <a href="../Landing.aspx"><< Back to Home</a><br><br>
          </div>
       </div>
+    </div>
 </asp:Content>

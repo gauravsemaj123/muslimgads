@@ -4,25 +4,82 @@
 }
 
 .box1 {
-    text-wrap:normal;
+    text-wrap: wrap;
     background: #fefefe;
-    width: 350px;
-    height: 150px;
-    z-index:-1;
-    border-radius:10px;
-    padding: 10px;
+    width: 450px;
+    height: 250px;
+    z-index: -1;
+    border-radius: 10px;
+    padding: 40px;
     margin-left: 10px;
     display: inline-block;
+    margin-top: 170px;
+    margin-bottom: 150px;
 }
 
 .box2 {
-    text-wrap:normal;
+    text-wrap: wrap;
     background: #fefefe;
     width: 350px;
-    height: 150px;
-    z-index:-1;
-    border-radius:10px;
+    height: 410px;
+    z-index: -1;
+    border-radius: 10px;
     padding: 10px;
-    margin-left: 10px;
-    display:inline-block;
+    margin-left: 85px;
+    display: inline-block;
+    margin-top: 85px;
+}
+
+.buttons{
+    display:grid;
+    margin: 10px
+}
+
+.buttons > .login{
+    text-align: center;
+   background: #43B02A;
+   border-radius: 5px;
+   border: 2px solid #00594c1;
+   color: #fefefe;
+   font-size: 2.3em;
+   margin:40px 40px 10px;
+   height:50px;
+}
+.buttons > .login:hover{
+    font-style:normal;
+    text-decoration:none;
+    cursor: pointer;
+}
+.buttons > .register{
+    text-align: center;
+   background: #43B02A;
+   border-radius: 5px;
+   border: 2px solid #00594c1;
+   color: #fefefe;
+   font-size: 2.3em;
+   margin:10px 40px 10px;
+   height:50px;
+}
+.buttons > .register:hover{
+    font-style:normal;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.logthru{
+    display:block;
+    margin: 40px 55px 20px;
+}
+
+.logthru > .google{
+    background:transparent !important;
+    width: 100px;
+    height: 50px;
+    border: transparent !important;
+}
+.logthru > .linkedin{
+    background:transparent !important;
+    width: 100px;
+    height: 50px;
+    border: transparent !important;
 }

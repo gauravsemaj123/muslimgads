@@ -813,6 +813,13 @@ pre code {
   clear: both;
 }
 
+.jacol{
+    width:20px;
+    height:20px;
+    background: transparent !important;
+    text-wrap: wrap;
+}
+
 .col-xs-1,
 .col-xs-2,
 .col-xs-3,
