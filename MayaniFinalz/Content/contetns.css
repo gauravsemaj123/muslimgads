@@ -1,0 +1,10 @@
+﻿.box1 {
+    text-wrap:normal;
+    background: #fefefe;
+    width: 350px;
+    height: 150px;
+    z-index: 1;
+    border-radius:10px;
+    padding: 10px;
+    margin-left: 10px;
+}
