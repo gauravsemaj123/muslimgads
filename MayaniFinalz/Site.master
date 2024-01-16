@@ -14,6 +14,7 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.css" rel="stylesheet">
 </head>
     <style>
                 .vl {
@@ -29,10 +30,10 @@
                 float: right;
                 margin-top: 68px;
                 margin-right:127px;
-                display: block;
+                display: block !important;
             }
             #panel, #flip {
-              display: block;
+                z-index: 2;
             }
 
             #panel {
@@ -40,23 +41,33 @@
             }
 
             #panel2, #flip2 {
-                display:block;
+                z-index: 2;
             }
 
             #panel2 {
               display: none;
             }
             .getstarted{
+                padding:15px;
                 background: #00594c;
                 width:auto;
                 height:auto;
                 border-radius:10px;
             }
             .about{
+                padding:15px;
                 background: #00594c;
                 width:auto;
                 height:auto;
                 border-radius:10px;
+            }
+            .font-gilroy {
+                font-family: 'Gilroy', sans-serif !important;
+            }
+            .hr{
+                border: 1px solid #fefefe;
+                width:200px;
+                margin: 5px;
             }
     </style>
     <script> 
@@ -90,7 +101,7 @@ $(document).ready(function(){
                             <ul class="nav navbar-nav navbar-right">
                                 <li style="display:inline-block">
                                     <a>
-                                        <img id="flip" src="assets/gs button.png" width="200px" />
+                                        <strong style="font-size: 35px; color: #00594c;" class="font-gilroy" id="flip">GET STARTED</strong>
                                     </a>
                                 </li>
                                 <li style="display:inline-block">
@@ -98,7 +109,7 @@ $(document).ready(function(){
                                 </li>
                                 <li style="display:inline-block">
                                     <a>
-                                        <img id="flip2" src="assets/about.png" width="110px" />
+                                        <strong style="font-size: 35px; color: #00594c;" class="font-gilroy" id="flip2">ABOUT</strong>
                                     </a>
                                 </li>
                             </ul>
@@ -107,15 +118,27 @@ $(document).ready(function(){
                 </div>
             </div>
         </div>
-        <div class="rowright">
-            <div id="panel"  style="display: inline-block;">
-                <div class="getstarted">
-                    asdsadsads
+                <div class="rowright">
+            <div id="panel">
+                <div class="getstarted font-gilroy" style="display: grid; text-align:center">
+                    <a style="color:#fefefe" href="Accounts/Login.aspx">
+                        <strong style="font-size: 25px">LOG IN</strong>
+                    </a>
+                    <hr class="hr" />
+                    <a style="color:#fefefe" href="Accounts/Register.aspx">
+                        <strong style="font-size: 25px">REGISTER</strong>
+                    </a>
                 </div>
             </div>
-            <div id="panel2" style="display: inline-block;">
-                <div class="about">
-                   daksjhjs
+            <div id="panel2">
+                <div class="about font-gilroy" style="display: grid; text-align:center">
+                    <a style="color:#fefefe" href="Accounts/Login.aspx">
+                        <strong style="font-size: 25px">LOG IN</strong>
+                    </a>
+                    <hr class="hr" />
+                    <a style="color:#fefefe" href="Accounts/Register.aspx">
+                        <strong style="font-size: 25px">REGISTER</strong>
+                    </a>
                 </div>
             </div>
         </div>
