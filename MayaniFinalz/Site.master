@@ -27,7 +27,9 @@
                     cursor:pointer;
                 }
             .rowright{
-                float: right;
+                right: 75px;
+                position: absolute;
+                z-index:2312;
                 margin-top: 68px;
                 margin-right:127px;
                 display: block !important;
