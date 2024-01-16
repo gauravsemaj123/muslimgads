@@ -39,7 +39,7 @@
                              <a href="#"> Forgot Password?</a>
                          </div>
                         <div class="form-group">
-                           <a href="usersignup.aspx"><input class="btn btn-info btn-block btn-lg" id="Button2" type="button" value="Sign in with linkedln" /></a>
+                           <a href="usersignup.aspx"><input class="btn btn-info btn-block btn-lg" id="Button2" type="button" value="Sign in with linkedin" /></a>
                         </div>
                           <div class="form-group">
                            <a href="usersignup.aspx"><input class="btn btn-info btn-block btn-lg" id="Button3" type="button" value="Sign in with google" /></a>
