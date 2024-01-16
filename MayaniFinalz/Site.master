@@ -133,11 +133,11 @@ $(document).ready(function(){
             <div id="panel2">
                 <div class="about font-gilroy" style="display: grid; text-align:center">
                     <a style="color:#fefefe" href="Accounts/Login.aspx">
-                        <strong style="font-size: 25px">LOG IN</strong>
+                        <strong style="font-size: 25px">MAYANI PAGE</strong>
                     </a>
                     <hr class="hr" />
                     <a style="color:#fefefe" href="Accounts/Register.aspx">
-                        <strong style="font-size: 25px">REGISTER</strong>
+                        <strong style="font-size: 25px">CONTACT US</strong>
                     </a>
                 </div>
             </div>
