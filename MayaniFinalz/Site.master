@@ -13,6 +13,7 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
 </head>
     <style>
                 .vl {
@@ -26,30 +27,50 @@
                 }
             .rowright{
                 float: right;
+                margin-top: 68px;
+                margin-right:127px;
+                display: block;
+            }
+            #panel, #flip {
+              display: block;
+            }
+
+            #panel {
+              display: none;
+            }
+
+            #panel2, #flip2 {
+                display:block;
+            }
+
+            #panel2 {
+              display: none;
+            }
+            .getstarted{
+                background: #00594c;
+                width:auto;
+                height:auto;
+                border-radius:10px;
+            }
+            .about{
+                background: #00594c;
+                width:auto;
+                height:auto;
+                border-radius:10px;
             }
     </style>
     <script> 
 $(document).ready(function(){
-  $("#flip").hover(function(){
+  $("#flip").click(function(){
     $("#panel").slideToggle("fast");
   });
-});
-$(document).ready(function () {
-    $("#flip").click(function () {
-        $("#panel").slideToggle("fast");
-    });
 });
 </script>
 <script> 
 $(document).ready(function(){
-  $("#flip2").hover(function(){
+  $("#flip2").click(function(){
     $("#panel2").slideToggle("fast");
   });
-});
-$(document).ready(function () {
-    $("#flip").click(function () {
-        $("#panel").slideToggle("fast");
-    });
 });
 </script>
 <body>
@@ -86,6 +107,18 @@ $(document).ready(function () {
                 </div>
             </div>
         </div>
+        <div class="rowright">
+            <div id="panel"  style="display: inline-block;">
+                <div class="getstarted">
+                    asdsadsads
+                </div>
+            </div>
+            <div id="panel2" style="display: inline-block;">
+                <div class="about">
+                   daksjhjs
+                </div>
+            </div>
+        </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
@@ -96,4 +129,5 @@ $(document).ready(function () {
         </div>
     </form>
 </body>
+    <script src="Scripts/jquery-1.10.2.js"></script>
 </html>
